@@ -62,4 +62,5 @@ add_executable(GildedRoseApprovalTests
     GildedRoseApprovalMain.cc
     )
 target_link_libraries(GildedRoseApprovalTests ${GTEST_BOTH_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+add_dependencies(GildedRoseApprovalTests aprovaltest)
 add_test(NAME GildedRoseApprovalTests COMMAND GildedRoseApprovalTests)

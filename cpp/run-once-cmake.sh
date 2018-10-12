@@ -5,6 +5,4 @@ if [[ ! -d build ]]; then
 fi
 
 cd build
-cmake ..
-cmake --build .
-cmake --build . --target test
+cmake .. -DCMAKE_BUILD_TYPE=DEBUG && cmake --build . && cmake --build . --target test
