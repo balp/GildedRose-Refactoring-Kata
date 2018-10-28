@@ -1,3 +1,4 @@
 dockcross-linux-armv7
 build/
 xcbuild/
+*.swp

@@ -65,6 +65,7 @@ add_executable(GildedRose
     )
 target_link_libraries(GildedRose ${GTEST_BOTH_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 add_test(NAME GildedRose COMMAND GildedRose)
+set_property(TARGET GildedRose PROPERTY CXX_STANDARD 14)
 
 add_executable(GildedRoseTextTests
     GildedRose.cc
